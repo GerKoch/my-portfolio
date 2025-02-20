@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import Services from "../services/Services"
+// import Services from "../services/Services"
 import Tecnologies from "../tecnologies/Tecnologies"
 import Portfolio from "../portfolio/Portfolio"
 import Contact from "../contact/Contact"
@@ -11,25 +11,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed flex flex-row bg-[#343434] items-center justify-end px-10 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
-        <ul className="flex px-20 space-x-6 text-white uppercase">
+        <ul className="flex px-20 space-x-6 text-amber-500 text-xl uppercase">
           <li>
             <Link
               to="home"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-amber-500"
+              className="cursor-pointer hover:text-amber-700"
             >
               Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="services"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer hover:text-amber-500"
-            >
-              Servicios
             </Link>
           </li>
           <li>
@@ -37,17 +27,27 @@ const Navbar = () => {
               to="tecnologies"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-amber-500"
+              className="cursor-pointer hover:text-amber-700"
             >
               Tecnologías
             </Link>
           </li>
+          {/* <li>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-amber-700"
+            >
+              Servicios
+            </Link>
+          </li> */}
           <li>
             <Link
               to="portfolio"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-amber-500"
+              className="cursor-pointer hover:text-amber-700"
             >
               Portfolio
             </Link>
@@ -57,42 +57,28 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-amber-500"
+              className="cursor-pointer hover:text-amber-700"
             >
               Contacto
             </Link>
           </li>
         </ul>
       </nav>
+
       <div>
-        <section
-          id="home"
-          className="h-screen flex items-center justify-center"
-        >
+        <section id="home">
           <Home />
         </section>
-        <section
-          id="services"
-          className="h-screen bg-blue-500 flex items-center justify-center"
-        >
-          <Services />
-        </section>
-        <section
-          id="tecnologies"
-          className="h-screen bg-red-500 flex items-center justify-center"
-        >
+        <section id="tecnologies">
           <Tecnologies />
         </section>
-        <section
-          id="portfolio"
-          className="h-screen bg-slate-500 flex items-center justify-center"
-        >
+        {/* <section id="services">
+          <Services />
+        </section> */}
+        <section id="portfolio">
           <Portfolio />
         </section>
-        <section
-          id="contact"
-          className="h-screen bg-slate-900 flex items-center justify-center"
-        >
+        <section id="contact">
           <Contact />
         </section>
       </div>
