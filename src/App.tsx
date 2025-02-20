@@ -1,13 +1,18 @@
-import Home from "./components/home/Home"
 import Navbar from "./components/navbar/Navbar"
+
+
 
 
 function App() {
   return (
-    <>
+    <div >
       <Navbar />
-      <Home />
-    </>
+      {/* <Home />
+      <Services />
+      <Tecnologies />
+      <Portfolio />
+      <Contact /> */}
+    </div>
   )
 }
 
