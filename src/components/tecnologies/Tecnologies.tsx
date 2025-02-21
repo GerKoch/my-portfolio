@@ -1,9 +1,9 @@
 const Tecnologies = () => {
   return (
-    <div className="bg-[#393838] flex flex-row items-center justify-center px-30 py-45 pb-[100px] text-zinc-200 w-screen h-screen">
+    <div className="bg-[#2b2b2b] flex flex-row items-center justify-center px-30 py-45 pb-[95px] text-zinc-200 w-screen h-screen">
       <div className="flex flex-col gap-7 p-0">
 
-        <div className="flex flex-row justify-center gap-20">
+        <div className="flex flex-row justify-center gap-20 text-amber-400">
           <div>
             <h2 className="text-4xl">HTML</h2>
             <p>3 años</p>
@@ -30,7 +30,7 @@ const Tecnologies = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center gap-20">
+        <div className="flex flex-row justify-center gap-20 text-amber-500">
           <div>
             <h2 className="text-4xl">CSS</h2>
             <p>3 años</p>
@@ -49,7 +49,7 @@ const Tecnologies = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center gap-20">
+        <div className="flex flex-row justify-center gap-20 text-amber-600">
           <div>
             <h2 className="text-4xl">Node.js</h2>
             <p>3 años</p>
@@ -68,7 +68,7 @@ const Tecnologies = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center gap-20">
+        <div className="flex flex-row justify-center gap-20 text-amber-700">
           <div>
             <h2 className="text-4xl">GitHub</h2>
             <p>3 años</p>
