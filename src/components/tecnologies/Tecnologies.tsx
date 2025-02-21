@@ -2,7 +2,7 @@ const Tecnologies = () => {
   return (
     <div className="bg-[#2b2b2b] flex flex-row items-center justify-center px-30 py-45 pb-[95px] text-zinc-200 w-screen h-screen">
       <div className="flex flex-col gap-7 p-0">
-
+        <h1 className="flex items-start text-zinc-700 text-4xl">Mis<span className="text-zinc-600 ml-2.5 mr-2.5">tecnologías</span>usadas son</h1>
         <div className="flex flex-row justify-center gap-20 text-amber-400">
           <div>
             <h2 className="text-4xl">HTML</h2>
