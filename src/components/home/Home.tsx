@@ -1,4 +1,4 @@
-import image from "../../assets/images/Perfil Picture.jpg"
+import image from "../../assets/images/Ger4-1.png"
 import ContactLinks from "../contactLinks/ContactLinks"
 
 
@@ -16,12 +16,14 @@ const Home = () => {
         </div>
         <ContactLinks />
       </div >
-      <div className="flex border-8 border-[#2e2e2e]">
-        <img
-          src={image}
-          alt="image"
-          className="flex w-[300px] z-9"
-        />
+      <div className="px-15">
+        <div className="flex border-8 bg-[#2e2e2e] border-amber-700 w-[400px]">
+          <img
+            src={image}
+            alt="image"
+            className="object-cover z-9"
+          />
+        </div>
       </div>
     </div >
   )
