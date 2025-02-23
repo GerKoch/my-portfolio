@@ -63,71 +63,75 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#2b2b2b] flex flex-col items-start justify-center px-30 pt-[100px] text-zinc-200 w-screen h-screen">
-      <div className="flex flex-row gap-[190px] p-0">
+    <div className="bg-[#2b2b2b] flex flex-col items-center justify-center px-4 sm:px-30 py-6 sm:pt-40 w-full h-screen">
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-40">
 
-        <div className="flex flex-col gap-9 border-l-8 px-10 border-amber-900 w-[600px] h-[450px]">
-          <h1 className="flex items-start justify-center text-zinc-700 text-4xl w-[100px] pl-20"><span className="text-amber-600 ml-2.5 mr-2.5">Contactame</span></h1>
-          <h2 className="flex items-start justify-center text-zinc-500 text-2xl">
+        <div className="flex flex-col gap-6 sm:gap-9 px-4 sm:px-10 border-l-8 sm:w-[600px] sm:h-[450px] border-amber-900">
+          <h1 className="text-zinc-700 text-3xl sm:text-4xl text-center sm:text-left">
+            <span className="text-amber-600">Contactame</span>
+          </h1>
+          <h2 className="text-zinc-500 text-lg sm:text-2xl text-center sm:text-left">
             Me encantaría escuchar tu propuesta! <br /> Llena el formulario y me counicaré contigo a la brevedad
           </h2>
-          <h2 className="flex items-start justify-center text-amber-500 text-2xl">
+          <h2 className="text-amber-500 text-lg sm:text-2xl text-center sm:text-left">
             ¡Gracias por pasar!
           </h2>
-          <div className="flex my-[135px]">
+          <div className="flex justify-center sm:justify-start pt-32">
             <ContactLinks />
           </div>
         </div>
 
-        <form onSubmit={onSubmit} className="flex flex-col w-[500px] h-[500px] items-start gap-10 border-b-8 border-amber-900">
+        <form onSubmit={onSubmit} className="flex flex-col sm:gap-3 sm:w-[500px] border-b-8 border-amber-900 py-6 sm:pt-0">
 
-          <div className="flex flex-col justify-center items-end gap-5 text-amber-700">
-            <label className="text-3xl">Nombre</label>
+          <div className="flex flex-col gap-4 sm:gap-3 text-amber-700">
+            <label className="text-xl sm:text-3xl">Nombre</label>
             <input
               type="text"
-              placeholder="____________________________________________________________________________"
+              placeholder="Ingresa tu nombre aquí"
               name="name"
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-[500px]"
+              className="p-3 w-full border-2 border-amber-500 rounded-md bg-zinc-800 text-zinc-200 placeholder-zinc-500"
             />
           </div>
 
-          <div className="flex flex-col justify-center items-end gap-5 text-amber-700">
-            <label className="text-3xl">Email</label>
+          <div className="flex flex-col gap-4 sm:gap-3 text-amber-700">
+            <label className="text-xl sm:text-3xl">Email</label>
             <input
               type="email"
-              placeholder="____________________________________________________________________________"
+              placeholder="Ingresa tu email aquí"
               name="email"
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-[500px]"
+              className="p-3 w-full border-2 border-amber-500 rounded-md bg-zinc-800 text-zinc-200 placeholder-zinc-500"
             />
           </div>
 
-          <div className="flex flex-col justify-center items-end gap-5 text-amber-700">
-            <label className="text-3xl">Mensaje</label>
-            <input
+          <div className="flex flex-col gap-4 sm:gap-3 text-amber-700">
+            <label className="text-xl sm:text-3xl">Mensaje</label>
+            <textarea
               name="message"
-              placeholder="____________________________________________________________________________"
+              placeholder="Ingresa tu mensaje aquí"
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-[500px] "
+              className="p-3 w-full border-2 border-amber-500 rounded-md bg-zinc-800 text-zinc-200 placeholder-zinc-500"
+              rows={5}
             />
           </div>
 
-          <div className="flex flex-row justify-center pt-14 text-amber-600">
-            <button type="submit" className="text-3xl hover:text-amber-400 cursor-pointer">Enviar Mensaje</button>
+          <div className="flex justify-end pt-6 sm:pt-3">
+            <button type="submit" className="text-2xl sm:text-3xl text-amber-600 hover:text-amber-400 cursor-pointer">
+              Enviar Mensaje
+            </button>
           </div>
 
-
         </form>
-
-        {status}
       </div>
+
+      <div className="text-center text-xl text-amber-600 mt-4">{status}</div>
     </div>
   );
 };

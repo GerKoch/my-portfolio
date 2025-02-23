@@ -6,16 +6,18 @@ import Teslo from "../../assets/images/Teslo-shop.png"
 
 const Portfolio = () => {
   return (
-    <div className="bg-[#252525] flex flex-col px-30 py-45 pb-[100px] gap-10 text-zinc-200 w-screen h-full">
+    <div className="bg-[#252525] flex flex-col px-30 py-45 pb-[100px] gap-10 text-zinc-200 w-full h-full">
       <div className="flex flex-col gap-7 p-0">
-        <h1 className="flex items-start text-zinc-700 text-4xl">Algunos de mis<span className="text-zinc-600 ml-2.5 mr-2.5">trabajos</span>son</h1>
+        <h1 className="flex items-start text-zinc-700 text-2xl sm:text-3xl md:text-4xl">
+          Algunos de mis<span className="text-zinc-600 ml-2.5 mr-2.5">trabajos</span>son
+        </h1>
 
-        <div className="grid grid-cols-2 gap-7 w-full h-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 w-full">
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
             <img
               src={EstJu}
               alt="Estudio Juridico image"
-              className="bg-zinc-800 w-full h-96 object-contain"
+              className="bg-zinc-800 w-full h-auto object-contain"
             />
             <h1 className="text-zinc-500">Landing Page</h1>
             <h2 className="text-zinc-400">React Vite Tailwind CSS</h2>
@@ -25,7 +27,7 @@ const Portfolio = () => {
             <img
               src={PsiImage}
               alt="Psiquiatría Online image"
-              className="bg-zinc-800 w-full h-96 object-contain"
+              className="bg-zinc-800 w-full h-auto object-contain"
             />
             <h1 className="text-zinc-500">Landing Page</h1>
             <h2 className="text-zinc-400">React  Vite  Tailwind CSS</h2>
@@ -35,7 +37,7 @@ const Portfolio = () => {
             <img
               src={Teslo}
               alt="Teslo Shop Image"
-              className="bg-zinc-800 w-full h-96 object-contain"
+              className="bg-zinc-800 w-full h-auto object-contain"
             />
             <h1 className="text-zinc-500">E-commerce</h1>
             <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
@@ -46,7 +48,7 @@ const Portfolio = () => {
             <img
               src={MarieImage}
               alt="Marie Lanas image"
-              className="bg-zinc-800 w-full h-96 object-contain"
+              className="bg-zinc-800 w-full h-auto object-contain"
             />
             <h1 className="text-zinc-500">E-commerce</h1>
             <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>

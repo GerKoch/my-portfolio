@@ -5,13 +5,8 @@ import Navbar from "./components/navbar/Navbar"
 
 function App() {
   return (
-    <div >
+    <div className="max-w-screen-3xl mx-auto">
       <Navbar />
-      {/* <Home />
-      <Services />
-      <Tecnologies />
-      <Portfolio />
-      <Contact /> */}
     </div>
   )
 }
