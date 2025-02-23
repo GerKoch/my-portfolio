@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#2b2b2b] flex flex-col items-center justify-center px-4 sm:px-30 py-6 sm:pt-40 w-full h-screen">
+    <div className="bg-[#2b2b2b] flex flex-col pt-[500px] pb-[460px] items-center justify-center px-4 sm:px-30 sm:py-6 sm:pt-40 w-full h-screen">
       <div className="flex flex-col sm:flex-row gap-6 sm:gap-40">
 
         <div className="flex flex-col gap-6 sm:gap-9 px-4 sm:px-10 border-l-8 sm:w-[600px] sm:h-[450px] border-amber-900">

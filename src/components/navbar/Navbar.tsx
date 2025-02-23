@@ -8,8 +8,8 @@ import Home from "../home/Home"
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="fixed flex flex-row bg-[#252525] items-center justify-end px-10 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
+    <div>
+      <nav className="hidden sm:fixed sm:flex flex-row bg-[#252525] items-center justify-end px-10 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
         <ul className="flex px-20 space-x-6 text-xl uppercase">
           <li className="text-amber-700">
             <Link
@@ -68,7 +68,7 @@ const Navbar = () => {
           <Contact />
         </section>
       </div>
-    </>
+    </div>
   )
 }
 

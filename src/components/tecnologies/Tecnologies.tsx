@@ -1,9 +1,9 @@
 const Tecnologies = () => {
   return (
-    <div className="bg-[#2b2b2b] flex flex-col items-center justify-center px-4 py-6 pt-[100px] text-zinc-200 w-screen h-screen">
+    <div className="bg-[#2b2b2b] flex flex-col items-center justify-center px-4 py-6 pt-[50px] text-zinc-200 w-screen h-full sm:h-screen">
       <div className="flex flex-col gap-7 p-0">
 
-        <h1 className="flex items-start text-zinc-700 text-xl sm:text-3xl md:text-4xl">
+        <h1 className="flex items-start text-zinc-700 text-3xl sm:text-3xl md:text-4xl">
           Mis<span className="text-zinc-600 ml-2.5 mr-2.5">tecnologías</span>usadas son
         </h1>
 
