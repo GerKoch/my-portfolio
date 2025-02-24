@@ -3,10 +3,17 @@ import Tecnologies from "../tecnologies/Tecnologies"
 import Portfolio from "../portfolio/Portfolio"
 import Contact from "../contact/Contact"
 import Home from "../home/Home"
-
+import { useState } from "react"
 
 
 const Navbar = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
     <div>
       <nav className="hidden sm:fixed sm:flex flex-row bg-[#252525] items-center justify-end px-10 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
@@ -52,6 +59,71 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+      </nav>
+
+      <nav className="sm:hidden fixed top-0 left-0 w-full bg-[#252525] z-10 shadow-md">
+        <div className="flex justify-between items-center px-6 py-4 w-full">
+          <div className="text-white text-2xl">
+          </div>
+          <button
+            onClick={toggleMenu}
+            className="text-amber-500 text-3xl w-screen "
+          >
+            {isMenuOpen ? "</>" : "<...>"}
+          </button>
+        </div>
+
+
+        {isMenuOpen && (
+          <div className="sm:hidden bg-[#252525] px-6 py-4 space-x-4 text-center">
+            <ul className="text-xl space-y-4 uppercase">
+              <li className="text-amber-700">
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-amber-600"
+                  onClick={toggleMenu}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="text-amber-600">
+                <Link
+                  to="tecnologies"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-amber-700"
+                  onClick={toggleMenu}
+                >
+                  Tecnologías
+                </Link>
+              </li>
+              <li className="text-amber-500">
+                <Link
+                  to="portfolio"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-amber-700"
+                  onClick={toggleMenu}
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li className="text-amber-400">
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-amber-700"
+                  onClick={toggleMenu}
+                >
+                  Contacto
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
 
       <div>
