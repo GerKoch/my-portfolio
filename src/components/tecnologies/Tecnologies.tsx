@@ -60,11 +60,11 @@ const Tecnologies = () => {
           </div>
           <div>
             <h2 className="text-3xl sm:text-4xl">Jest</h2>
-            <p>1 años</p>
+            <p>1 año</p>
           </div>
           <div>
             <h2 className="text-3xl sm:text-4xl">Cypress</h2>
-            <p>1 años</p>
+            <p>1 año</p>
           </div>
           <div>
             <h2 className="text-3xl sm:text-4xl">Express.js</h2>
