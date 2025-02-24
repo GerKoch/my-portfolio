@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="bg-[#2b2b2b] flex flex-col pt-[550px] pb-[460px] items-center justify-center px-4 sm:px-30 sm:py-6 sm:pt-40 w-full h-screen">
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-40">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-40">
 
         <div className="flex flex-col gap-6 sm:gap-9 px-4 sm:px-10 border-l-8 sm:w-[600px] sm:h-[450px] border-amber-900">
           <h1 className="text-zinc-700 text-3xl sm:text-4xl text-center sm:text-left">
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="flex flex-col gap-4 sm:gap-3 text-amber-700">
-            <label className="text-xl sm:text-3xl">Email</label>
+            <label className="text-xl sm:text-3xl pt-3">Email</label>
             <input
               type="email"
               placeholder="Ingresa tu email aquí"
@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="flex flex-col gap-4 sm:gap-3 text-amber-700">
-            <label className="text-xl sm:text-3xl">Mensaje</label>
+            <label className="text-xl sm:text-3xl pt-3">Mensaje</label>
             <textarea
               name="message"
               placeholder="Ingresa tu mensaje aquí"
