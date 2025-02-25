@@ -14,7 +14,7 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 w-full">
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
-            <a href="https://github.com/GerKoch/estudio-juridico-peretto" target="_blank">
+            <a href="https://estudioperetto.site/" target="_blank">
               <img
                 src={EstJu}
                 alt="Estudio Juridico image"
