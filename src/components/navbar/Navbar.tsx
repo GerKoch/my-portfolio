@@ -4,6 +4,9 @@ import Portfolio from "../portfolio/Portfolio"
 import Contact from "../contact/Contact"
 import Home from "../home/Home"
 import { useState } from "react"
+import { AiOutlineClose } from "react-icons/ai"
+import { HiMenuAlt1 } from "react-icons/hi"
+
 
 
 const Navbar = () => {
@@ -16,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="hidden sm:fixed sm:flex flex-row bg-[#252525] items-center justify-end px-10 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
+      <nav className="hidden sm:fixed sm:flex flex-row bg-[#252525] items-center justify-end px-10 md:px-15 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
         <ul className="flex px-20 space-x-6 text-xl uppercase">
           <li className="text-amber-700">
             <Link
@@ -30,22 +33,22 @@ const Navbar = () => {
           </li>
           <li className="text-amber-600">
             <Link
-              to="tecnologies"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer hover:text-amber-700"
-            >
-              Tecnologías
-            </Link>
-          </li>
-          <li className="text-amber-500">
-            <Link
               to="portfolio"
               smooth={true}
               duration={500}
               className="cursor-pointer hover:text-amber-700"
             >
               Portfolio
+            </Link>
+          </li>
+          <li className="text-amber-500">
+            <Link
+              to="tecnologies"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-amber-700"
+            >
+              Tecnologías
             </Link>
           </li>
           <li className="text-amber-400">
@@ -67,9 +70,9 @@ const Navbar = () => {
           </div>
           <button
             onClick={toggleMenu}
-            className="text-amber-500 text-3xl w-screen "
+            className="text-amber-500 text-3xl w-fit ml-auto"
           >
-            {isMenuOpen ? "</>" : "<...>"}
+            {isMenuOpen ? <AiOutlineClose className="h-8 w-8" /> : <HiMenuAlt1 className="h-8 w-8" />}
           </button>
         </div>
 
@@ -90,17 +93,6 @@ const Navbar = () => {
               </li>
               <li className="text-amber-600">
                 <Link
-                  to="tecnologies"
-                  smooth={true}
-                  duration={500}
-                  className="cursor-pointer hover:text-amber-700"
-                  onClick={toggleMenu}
-                >
-                  Tecnologías
-                </Link>
-              </li>
-              <li className="text-amber-500">
-                <Link
                   to="portfolio"
                   smooth={true}
                   duration={500}
@@ -108,6 +100,17 @@ const Navbar = () => {
                   onClick={toggleMenu}
                 >
                   Portfolio
+                </Link>
+              </li>
+              <li className="text-amber-500">
+                <Link
+                  to="tecnologies"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-amber-700"
+                  onClick={toggleMenu}
+                >
+                  Tecnologías
                 </Link>
               </li>
               <li className="text-amber-400">
@@ -130,11 +133,11 @@ const Navbar = () => {
         <section id="home">
           <Home />
         </section>
-        <section id="tecnologies">
-          <Tecnologies />
-        </section>
         <section id="portfolio">
           <Portfolio />
+        </section>
+        <section id="tecnologies">
+          <Tecnologies />
         </section>
         <section id="contact">
           <Contact />
