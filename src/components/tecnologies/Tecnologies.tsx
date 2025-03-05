@@ -40,7 +40,7 @@ const Tecnologies = () => {
             <p>3 años</p>
           </div>
           <div>
-            <h2 className="text-3xl sm:text-4xl">Stiled-Components</h2>
+            <h2 className="text-3xl sm:text-4xl">Styled-Components</h2>
             <p>3 años</p>
           </div>
           <div>

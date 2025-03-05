@@ -28,7 +28,7 @@ const Navbar = () => {
               duration={500}
               className="cursor-pointer hover:text-amber-600"
             >
-              Home
+              Inicio
             </Link>
           </li>
           <li className="text-amber-600">
@@ -88,7 +88,7 @@ const Navbar = () => {
                   className="cursor-pointer hover:text-amber-600"
                   onClick={toggleMenu}
                 >
-                  Home
+                  Inicio
                 </Link>
               </li>
               <li className="text-amber-600">

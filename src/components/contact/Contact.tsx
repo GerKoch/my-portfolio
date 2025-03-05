@@ -66,12 +66,12 @@ const Contact: React.FC = () => {
     <div className="bg-[#2b2b2b] flex flex-col pt-[550px] pb-[460px] items-center justify-center px-4 sm:px-30 sm:py-6 sm:pt-40 w-full h-screen">
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-40">
 
-        <div className="flex flex-col gap-6 sm:gap-9 px-4 sm:px-10 border-l-8 sm:w-[600px] sm:h-[450px] border-amber-900">
+        <div className="flex flex-col gap-6 sm:gap-9 px-4 sm:px-10 border-l-8 sm:w-[500px] sm:h-[450px] border-amber-900">
           <h1 className="text-zinc-700 text-3xl sm:text-4xl text-center sm:text-left">
             <span className="text-amber-600">Contactame</span>
           </h1>
           <h2 className="text-zinc-500 text-lg sm:text-2xl text-center sm:text-left">
-            Me encantaría escuchar tu propuesta! <br /> Llena el formulario y me counicaré contigo a la brevedad
+            Me encantaría escuchar tu propuesta! <br /> Llena el formulario y me comunicaré contigo a la brevedad
           </h2>
           <h2 className="text-amber-500 text-lg sm:text-2xl text-center sm:text-left">
             ¡Gracias por pasar!
