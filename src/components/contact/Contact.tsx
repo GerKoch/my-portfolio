@@ -43,7 +43,7 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: json,
-      }).then((res) => res.json());
+      });
 
       const data = await res.json();
 
