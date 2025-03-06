@@ -1,6 +1,6 @@
 # GermanKochDev - Portfolio Personal
 
-Bienvenido a germankochdev, mi portafolio personal. Esta aplicación web fue desarrollada para mostrar mis habilidades como desarrollador frontend y ofrecer una forma sencilla para que los reclutadores y empleadores puedan conocer mi trabajo y habilidades.
+Bienvenido a germankochdev, mi portfolio personal. Esta aplicación web fue desarrollada para mostrar mis habilidades como desarrollador frontend y ofrecer una forma sencilla para que los reclutadores y empleadores puedan conocer mi trabajo y habilidades.
 
 El sitio tiene una estructura simple con una barra de navegación que te permite desplazarte fácilmente entre las secciones: Inicio, Portfolio, Tecnologías y Contacto.
 
