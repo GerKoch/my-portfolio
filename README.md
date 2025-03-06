@@ -34,7 +34,7 @@ Esto abrirá la aplicación en tu navegador en la dirección http://localhost:51
 ## Secciones de la Aplicación
 
 - Inicio: Una pequeña introducción sobre mí, mi experiencia y lo que hago como desarrollador frontend.
-- Portfolio: Muestra una selección de mis proyectos más destacados. Cada proyecto incluye una breve descripción y enlaces a repositorios sus respectivas páginas web.
+- Portfolio: Muestra una selección de mis proyectos más destacados. Cada proyecto incluye una breve descripción y enlaces a repositorios o sus respectivas páginas web.
 - Tecnologías: Una lista de las principales tecnologías y herramientas con las que trabajo.
 - Contacto: Información sobre cómo los reclutadores o cualquier persona interesada puede ponerse en contacto conmigo.
 
