@@ -2,11 +2,9 @@ const Tecnologies = () => {
   return (
     <div className="bg-[#252525] flex flex-col items-center justify-center px-4 py-6 pt-[100px] text-zinc-200 w-screen h-full sm:h-screen">
       <div className="flex flex-col gap-7 p-0">
-
         <h1 className="flex items-start text-zinc-700 text-3xl sm:text-3xl md:text-4xl">
           Mis<span className="text-zinc-600 ml-2.5 mr-2.5">tecnologías</span>usadas
         </h1>
-
         <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-20 text-amber-400">
           <div>
             <h2 className="text-3xl sm:text-4xl">HTML</h2>
@@ -33,7 +31,6 @@ const Tecnologies = () => {
             <p>1 año</p>
           </div>
         </div>
-
         <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-20 text-amber-500">
           <div>
             <h2 className="text-3xl sm:text-4xl">CSS</h2>
@@ -52,7 +49,6 @@ const Tecnologies = () => {
             <p>1 año</p>
           </div>
         </div>
-
         <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-20 text-amber-600">
           <div>
             <h2 className="text-3xl sm:text-4xl">Node.js</h2>
@@ -71,14 +67,12 @@ const Tecnologies = () => {
             <p>1 año</p>
           </div>
         </div>
-
         <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-20 text-amber-700">
           <div>
             <h2 className="text-3xl sm:text-4xl">GitHub</h2>
             <p>3 años</p>
           </div>
         </div>
-
       </div >
     </div>
   )

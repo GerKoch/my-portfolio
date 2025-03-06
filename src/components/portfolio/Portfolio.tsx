@@ -1,8 +1,7 @@
-import MarieImage from "../../assets/images/Marie-Lanasdesktop.png"
-import PsiImage from "../../assets/images/Psiquiatria-Hernandez-desktop2.png"
+import MarieImage from "../../assets/images/Marie-Lanas.png"
+import PsiImage from "../../assets/images/Psiquiatria-Hernandez.png"
 import EstJu from "../../assets/images/Estudio-Juridico.jpg"
 import Teslo from "../../assets/images/Teslo-shop.png"
-
 
 const Portfolio = () => {
   return (
@@ -11,57 +10,65 @@ const Portfolio = () => {
         <h1 className="flex items-start text-zinc-700 text-2xl sm:text-3xl md:text-4xl">
           Algunos de mis<span className="text-zinc-600 ml-2.5 mr-2.5">trabajos</span>
         </h1>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 w-full">
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
-            <a href="https://estudioperetto.site/" target="_blank">
+            <a
+              href="https://estudioperetto.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver Landing Page del Estudio Jurídico desarrollado con React, Vite y Tailwind CSS"
+            >
               <img
                 src={EstJu}
-                alt="Estudio Juridico image"
+                alt="Landing page del Estudio Jurídico, desarrollado con React, Vite y Tailwind CSS"
                 className="bg-zinc-800 w-full h-auto object-contain"
               />
             </a>
             <h1 className="text-zinc-500">Landing Page</h1>
             <h2 className="text-zinc-400">React Vite Tailwind CSS</h2>
           </div>
-
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
-            <a href="https://psiquiatriahernandez.com/" target="_blank">
+            <a
+              href="https://psiquiatriahernandez.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver Landing page de Psiquiatría Online, desarrollada con React, Vite y Tailwind CSS"
+            >
               <img
                 src={PsiImage}
-                alt="Psiquiatría Online image"
+                alt="Landing page de Psiquiatría Online, desarrollada con React, Vite y Tailwind CSS"
                 className="bg-zinc-800 w-full h-auto object-contain"
               />
             </a>
             <h1 className="text-zinc-500">Landing Page</h1>
             <h2 className="text-zinc-400">React  Vite  Tailwind CSS</h2>
           </div>
-
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
             <img
               src={Teslo}
-              alt="Teslo Shop Image"
+              alt="E-commerce Teslo Shop, desarrollado con Next.js, TypeScript y Tailwind CSS"
               className="bg-zinc-800 w-full h-auto object-contain"
             />
             <h1 className="text-zinc-500">E-commerce</h1>
             <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
           </div>
-
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
-            <a href="https://marielanas.vercel.app/" target="_blank">
+            <a
+              href="https://marielanas.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
+            >
               <img
                 src={MarieImage}
-                alt="Marie Lanas image"
+                alt="E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
                 className="bg-zinc-800 w-full h-auto object-contain"
               />
             </a>
             <h1 className="text-zinc-500">E-commerce</h1>
             <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
           </div>
-
-
         </div>
-
       </div>
     </div >
   )

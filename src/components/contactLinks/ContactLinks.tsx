@@ -2,7 +2,6 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa6"
 import { RiFacebookCircleLine } from "react-icons/ri"
 
-
 const ContactLinks = () => {
   return (
     <div className="flex flex-row items-center gap-3">
