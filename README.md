@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# GermanKochDev - Portfolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a germankochdev, mi portafolio personal. Esta aplicación web fue desarrollada para mostrar mis habilidades como desarrollador frontend y ofrecer una forma sencilla para que los reclutadores y empleadores puedan conocer mi trabajo y habilidades.
 
-Currently, two official plugins are available:
+El sitio tiene una estructura simple con una barra de navegación que te permite desplazarte fácilmente entre las secciones: Inicio, Portfolio, Tecnologías y Contacto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- React: Biblioteca para construir interfaces de usuario interactivas.
+- Vite: Herramienta de construcción rápida para mejorar el rendimiento durante el desarrollo.
+- TypeScript: Añade tipado estático a JavaScript, mejorando la calidad y seguridad del código.
+- Tailwind CSS: Framework CSS de utilidad para facilitar el diseño y estilizado de la interfaz.
+- React Icons: Biblioteca para integrar fácilmente íconos SVG de manera sencilla y eficiente.
+- React Scroll: Para la navegación suave entre secciones con desplazamiento (scrolling).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
+Para ejecutar este proyecto localmente en tu máquina:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clona este repositorio:
+   git clone https://github.com/GerKoch/my-portfolio.git
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navega al directorio del proyecto:
+   cd my-portfolio
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Instala las dependencias:
+   npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Ejecuta el servidor de desarrollo:
+   npm run dev
+
+Esto abrirá la aplicación en tu navegador en la dirección http://localhost:5173 o la que esté preestablecida.
+
+## Secciones de la Aplicación
+
+- Inicio: Una pequeña introducción sobre mí, mi experiencia y lo que hago como desarrollador frontend.
+- Portfolio: Muestra una selección de mis proyectos más destacados. Cada proyecto incluye una breve descripción y enlaces a repositorios sus respectivas páginas web.
+- Tecnologías: Una lista de las principales tecnologías y herramientas con las que trabajo.
+- Contacto: Información sobre cómo los reclutadores o cualquier persona interesada puede ponerse en contacto conmigo.
+
+## Estructura de componentes
+
+La aplicación está organizada en una estructura modular, donde cada sección o funcionalidad se maneja a través de componentes reutilizables. A continuación se describe la estructura de carpetas y componentes:
+
+src/
+├── assets/ ----------------> Archivos estáticos.
+│ └── images/ --------------> Imágenes utilizadas en el proyecto
+│
+├── components/ ------------> Carpeta principal de componentes reutilizables
+│ ├── contact/ -------------> Componente relacionado con la sección de contacto
+│ │ └── Contact.tsx --------> Componente que muestra el formulario e información de contacto
+│ ├── contactLinks/ --------> Enlaces de redes sociales y otros medios de contacto
+│ │ └── ContactLinks.tsx ---> Componente para los enlaces sociales
+│ ├── dashboard/ -----------> Contenedor principal que organiza las secciones
+│ │ └── Dashboard.tsx ------> Contenedor que muestra las secciones Home, Portfolio, Technologies y contact
+│ ├── home/ ----------------> Componente de la sección Home (inicio)
+│ │ └── Home.tsx -----------> Componente principal de la sección "Inicio"
+│ ├── navbar/ --------------> Componente de la barra de navegación
+│ │ └── Navbar.tsx ---------> Barra de navegación con enlaces a las secciones
+│ ├── portfolio/ -----------> Componente de la sección de Portfolio
+│ │ └── Portfolio.tsx ------> Componente que lista tus proyectos
+│ ├── tecnologies/ ---------> Componente para la sección de Tecnologías
+│ │ └── Technologies.tsx ---> Componente que describe las tecnologías
+└── App.tsx ----------------> Componente principal que organiza la aplicación
