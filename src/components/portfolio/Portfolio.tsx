@@ -13,19 +13,19 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 w-full">
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
             <a
-              href="https://estudioperetto.site/"
+              href="https://marielanas.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Ver Landing Page del Estudio Jurídico desarrollado con React, Vite y Tailwind CSS"
+              aria-label="Ver E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
             >
               <img
-                src={EstJu}
-                alt="Landing page del Estudio Jurídico, desarrollado con React, Vite y Tailwind CSS"
+                src={MarieImage}
+                alt="E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
                 className="bg-zinc-800 w-full h-auto object-contain"
               />
             </a>
-            <h1 className="text-zinc-500">Landing Page</h1>
-            <h2 className="text-zinc-400">React Vite Tailwind CSS</h2>
+            <h1 className="text-zinc-500">E-commerce</h1>
+            <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
           </div>
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
             <a
@@ -44,27 +44,27 @@ const Portfolio = () => {
             <h2 className="text-zinc-400">React  Vite  Tailwind CSS</h2>
           </div>
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
+            <a
+              href="https://estudioperetto.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver Landing Page del Estudio Jurídico desarrollado con React, Vite y Tailwind CSS"
+            >
+              <img
+                src={EstJu}
+                alt="Landing page del Estudio Jurídico, desarrollado con React, Vite y Tailwind CSS"
+                className="bg-zinc-800 w-full h-auto object-contain"
+              />
+            </a>
+            <h1 className="text-zinc-500">Landing Page</h1>
+            <h2 className="text-zinc-400">React Vite Tailwind CSS</h2>
+          </div>
+          <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
             <img
               src={Teslo}
               alt="E-commerce Teslo Shop, desarrollado con Next.js, TypeScript y Tailwind CSS"
               className="bg-zinc-800 w-full h-auto object-contain"
             />
-            <h1 className="text-zinc-500">E-commerce</h1>
-            <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
-          </div>
-          <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
-            <a
-              href="https://marielanas.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
-            >
-              <img
-                src={MarieImage}
-                alt="E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
-                className="bg-zinc-800 w-full h-auto object-contain"
-              />
-            </a>
             <h1 className="text-zinc-500">E-commerce</h1>
             <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
           </div>
