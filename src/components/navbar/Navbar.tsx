@@ -13,7 +13,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="hidden sm:fixed sm:flex flex-row bg-[#252525] items-center justify-end px-10 md:px-15 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
+      <nav className="hidden sm:fixed sm:flex flex-row bg-[#252525] items-center justify-between px-10 md:px-15 w-screen h-[100px] top-0 left-0 z-10 shadow-md">
+        <div className="flex justify-between items-center px-6 py-4 w-full">
+          <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+            <span className="text-2xl sm:text-3xl md:text-4xl text-zinc-700">
+              Germán Koch
+            </span>
+          </Link>
+        </div>
         <ul className="flex px-20 space-x-6 text-xl uppercase">
           <li className="text-amber-700">
             <Link
@@ -59,8 +66,12 @@ const Navbar = () => {
       </nav>
       <nav className="sm:hidden fixed top-0 left-0 w-full bg-[#252525] z-10 shadow-md">
         <div className="flex justify-between items-center px-6 py-4 w-full">
-          <div className="text-white text-2xl">
-          </div>
+          <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+            <span className="text-2xl sm:text-3xl md:text-4xl text-zinc-700">
+              Germán Koch
+            </span>
+          </Link>
+
           <button
             onClick={toggleMenu}
             className="text-amber-500 text-3xl w-fit ml-auto"
