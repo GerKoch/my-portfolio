@@ -13,7 +13,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 w-full">
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
             <a
-              href="https://marielanas.vercel.app/"
+              href="https://www.marielanas.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Ver E-commerce Marie Lanas, desarrollado con Next.js, TypeScript y Tailwind CSS"
