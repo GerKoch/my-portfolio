@@ -1,7 +1,7 @@
-import MarieImage from "../../assets/images/Marie-Lanas.png"
+import MarieImage from "../../assets/images/Marie-desktop-v2.png"
 import PsiImage from "../../assets/images/Psiquiatria-Hernandez.png"
 import EstJu from "../../assets/images/Estudio-Juridico.jpg"
-import Teslo from "../../assets/images/Teslo-shop.png"
+import EstFeB from "../../assets/images/Estudio-ferreyra-barbra-desktop.png"
 
 const Portfolio = () => {
   return (
@@ -24,7 +24,7 @@ const Portfolio = () => {
                 className="bg-zinc-800 w-full h-auto object-contain"
               />
             </a>
-            <h1 className="text-zinc-500">E-commerce</h1>
+            <h1 className="text-zinc-500">E-commerce con pasarela de pagos de Mercado Pago</h1>
             <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
           </div>
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
@@ -57,16 +57,23 @@ const Portfolio = () => {
               />
             </a>
             <h1 className="text-zinc-500">Landing Page</h1>
-            <h2 className="text-zinc-400">React Vite Tailwind CSS</h2>
+            <h2 className="text-zinc-400">React Vite Tailwind CSS TypeScript</h2>
           </div>
           <div className="w-full text-2xl flex flex-col border-amber-800 border-b-4 py-2">
-            <img
-              src={Teslo}
-              alt="E-commerce Teslo Shop, desarrollado con Next.js, TypeScript y Tailwind CSS"
-              className="bg-zinc-800 w-full h-auto object-contain"
-            />
-            <h1 className="text-zinc-500">E-commerce</h1>
-            <h2 className="text-zinc-400">Next.js TypeScript Tailwind CSS</h2>
+            <a
+              href="https://estudioferreyrabarbayasociados.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver Landing Page del Estudio Jurídico desarrollado con React, Vite y Tailwind CSS"
+            >
+              <img
+                src={EstFeB}
+                alt="Landing page del Estudio Jurídico, desarrollado con React, Vite y Tailwind CSS"
+                className="bg-zinc-800 w-full h-auto object-contain"
+              />
+            </a>
+            <h1 className="text-zinc-500">Landing Page</h1>
+            <h2 className="text-zinc-400">React Vite Tailwind CSS TypeScript</h2>
           </div>
         </div>
       </div>
