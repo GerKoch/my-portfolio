@@ -84,7 +84,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="sm:hidden bg-[#252525] px-6 py-4 space-x-4 text-center">
             <ul className="text-xl space-y-4 uppercase">
-              <li className="text-amber-700">
+              <li className="text-amber-700 pt-6 pb-6">
                 <Link
                   to="home"
                   smooth={true}
@@ -95,7 +95,7 @@ const Navbar = () => {
                   Inicio
                 </Link>
               </li>
-              <li className="text-amber-600">
+              <li className="text-amber-600 pb-6">
                 <Link
                   to="portfolio"
                   smooth={true}
@@ -106,7 +106,7 @@ const Navbar = () => {
                   Portfolio
                 </Link>
               </li>
-              <li className="text-amber-500">
+              <li className="text-amber-500 pb-6">
                 <Link
                   to="tecnologies"
                   smooth={true}
@@ -117,7 +117,7 @@ const Navbar = () => {
                   Tecnologías
                 </Link>
               </li>
-              <li className="text-amber-400">
+              <li className="text-amber-400 pb-6">
                 <Link
                   to="contact"
                   smooth={true}
