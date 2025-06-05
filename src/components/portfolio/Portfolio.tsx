@@ -1,4 +1,4 @@
-import MarieImage from "../../assets/images/MarieLanas-Desktop11.jpg"
+import MarieImage from "../../assets/images/Marieesc.jpg"
 import PsiImage from "../../assets/images/Psiquiatria-Hernandez.png"
 import EstFeB from "../../assets/images/Estudio-ferreyra-barbra-desktop.png"
 import MrKurt from "../../assets/images/mrkurt-desktop.jpg"
