@@ -31,7 +31,7 @@ const Home = () => {
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl text-amber-600 w-full sm:w-[70%] order-6">
             Me apasiona crear sitios web únicos, funcionales y responsive, aplicando tecnologías como Next.js, React, Tailwind CSS y TypeScript.
-            Actualmente desarrollo soluciones completas que van desde el diseño frontend hasta la lógica backend, incluyendo autenticación, bases de datos, paneles de administración e integraciones con pagos, APIs y más.
+            Actualmente desarrollo soluciones completas que van desde el diseño front-end hasta la lógica backend, incluyendo autenticación, bases de datos, paneles de administración e integraciones con pagos, APIs y más.
           </h2>
         </div>
         <ContactLinks />
